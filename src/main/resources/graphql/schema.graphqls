@@ -14,3 +14,10 @@ type Author {
     firstName: String
     lastName: String
 }
+
+type Mutation {
+    addBook(name: String!, author: String, publisher: String!, price:Float!): String!
+    updateBook(id: ID!, name: String,author:String,publisher:String,price:Float): String!
+    deleteBook(id: ID!): String!
+    addTest(name: String!) : String!
+}
